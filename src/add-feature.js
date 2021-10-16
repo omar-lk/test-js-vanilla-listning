@@ -6,7 +6,7 @@ function waitFor(query, callback) {
       clearInterval(checkExist);
       callback(element);
     }
-  }, 500);
+  }, 200);
 }
 window.addEventListener("load", (event) => {
   waitFor(".offers__list .offer:nth-of-type(2)", (offer) => {
