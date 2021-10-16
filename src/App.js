@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import Offers from './offers'
 
+import "./add-feature";
 function App() {
   const [showOffers, setShowOffers] = useState(false)
   useEffect(() => {
@@ -23,7 +24,7 @@ function App() {
               <h3>We feed you the news so you dont have to.</h3>
             </div>
           </div>
-          {showOffers && <Offers />}
+          {showOffers ? <Offers /> :null}
         </div>
       </div>
     </div>

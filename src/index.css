@@ -10,7 +10,9 @@ body {
   font-family: 'Roboto';
   color: #000000;
 }
-
+.offers__container {
+  text-align: left;
+}
 /*
 Headings
 */
@@ -225,6 +227,7 @@ hr {
   margin: 0 auto;
   text-align: center;
 }
+
 
 /*
 Footer

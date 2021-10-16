@@ -25,6 +25,10 @@ p {
 .offers__container {
   margin: 16px 16px 0px;
   max-width: 1110px;
+  text-align: left;
+}
+.headline {
+  max-width: 100%;
 }
 
 .primary {
@@ -47,11 +51,11 @@ p {
   display: none;
 }
 
-.offers__disclosure-modal--checkbox:checked~.offers__modal {
+.offers__disclosure-modal--checkbox:checked ~ .offers__modal {
   display: block;
 }
 
-.offers__disclosure-modal--checkbox:checked~.offers__background {
+.offers__disclosure-modal--checkbox:checked ~ .offers__background {
   display: block;
 }
 
@@ -659,7 +663,6 @@ p {
   display: none;
 }
 
-
 .offers__list .offer:nth-of-type(1) .addon__sale-badge--star {
   display: flex;
   font-family: Poppins;
@@ -723,7 +726,7 @@ p {
   color: #000;
   text-shadow: 0 1px 0 #fff;
   filter: alpha(opacity=20);
-  opacity: .2;
+  opacity: 0.2;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -1080,7 +1083,6 @@ p {
 }
 
 @media only screen and (min-width: 886px) {
-
   .dropdown__value,
   .dropdown__option {
     font-size: 17px;
@@ -1193,7 +1195,7 @@ p {
   margin-left: -80px;
   font-size: 10px;
   font-weight: normal;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
 .popuptext a {
@@ -1223,11 +1225,11 @@ p {
   }
 }
 
-.tooltip__checkbox:checked~.popuptext {
+.tooltip__checkbox:checked ~ .popuptext {
   display: block;
 }
 
-.tooltip__checkbox:checked~.tooltip__icon::after {
+.tooltip__checkbox:checked ~ .tooltip__icon::after {
   display: block;
 }
 
@@ -1317,9 +1319,11 @@ p {
 .progress-bar2 {
   height: 6px;
   border-radius: 30px;
-  background-image: linear-gradient(to bottom,
-      rgba(255, 255, 255, 0.3),
-      rgba(255, 255, 255, 0.05));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.05)
+  );
   transition: 0.4s linear;
   transition-property: width, background-color;
 }
@@ -1351,7 +1355,7 @@ p {
   text-decoration: underline;
 }
 
-#ratingContainer:hover~.rate-breakdown,
+#ratingContainer:hover ~ .rate-breakdown,
 .rate-breakdown:hover {
   display: block;
 }
@@ -1360,5 +1364,18 @@ p {
   #ratingContainer .starRating {
     width: 128px;
     margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .headline h1,
+  h3 {
+    margin: 0 20px 0 20px;
+  }
+  .offers__container {
+    margin: 10px 0px 0px 0px;
+  }
+  .row {
+    padding: 0 10px 15px 11px;
   }
 }
